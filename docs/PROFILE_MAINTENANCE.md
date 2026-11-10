@@ -1,24 +1,21 @@
-# Profile maintenance
+# Profile README notes
 
-This is the public GitHub profile README for Arman Kadiwal.
+This repository is the public GitHub profile for **ARMAN-KADIWAL**.
 
-## Changing the GitHub username
+## Design
 
-The GitHub username (`kadiwalarman1-rgb`) is different from the display
-name (`Arman Kadiwal` shown in the graphic). Changing the username must be
-done in GitHub Settings > Account > Change username.
+The page uses an editorial, paper-and-ink illustration. No autoplaying animations, artificial trophies, stock portraits, or algorithmic-looking stats.
 
-After the username changes, rename this special repository to the **exact
-new username**. GitHub only displays the profile README while the public
-repository name matches the account username.
+- Cover illustration: `assets/field-notes.svg`
+- Main copy: `README.md`
+- Project descriptions should reflect the actual repositories, including their limitations.
 
-Update any old username links and local Git remotes after the rename.
-Do not delete the original repository or its graphics.
+## Keeping it useful
 
-## Keep the page trustworthy
+1. Keep the writing conversational and grounded in real work.
+2. Review the featured projects when their scope changes.
+3. Pin the strongest repositories manually in GitHub's **Customize your pins** section.
+4. Don't manufacture activity, stars, rankings, or test outcomes.
+5. If the username changes again, rename this special repository to match it and update links.
 
-- Feature actual public projects, with test instructions and limitations.
-- Keep descriptions honest: prototypes are prototypes, simulated results
-  are not production guarantees, and badges aren't performance rankings.
-- Check image rendering after renames and occasionally review external badges.
-- Update pinned repositories manually under the GitHub profile.
+Old neon banners and the animated terminal were removed from the current repository tree. They remain recoverable from Git history.

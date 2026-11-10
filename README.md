@@ -1,86 +1,48 @@
-<div align="center">
-  <img src="./assets/hero.svg" alt="Arman Kadiwal | Python, Android and DevOps" width="100%" />
-  <img src="./assets/terminal.gif" alt="Animated terminal: building and testing projects" width="100%" />
+<p align="center">
+  <img src="./assets/field-notes.svg" alt="Arman Kadiwal — developer field notes" width="100%" />
+</p>
 
-  <p>
-    <a href="https://github.com/kadiwalarman1-rgb?tab=repositories"><img alt="Repositories" src="https://img.shields.io/badge/EXPLORE-REPOSITORIES-4be8d5?style=for-the-badge&labelColor=0c1734" /></a>
-    <a href="https://github.com/kadiwalarman1-rgb/GhostDock"><img alt="Flagship project" src="https://img.shields.io/badge/FLAGSHIP-GHOSTDOCK-8d8bfd?style=for-the-badge&labelColor=0c1734" /></a>
-    <a href="https://github.com/kadiwalarman1-rgb/python-deep-dive"><img alt="Learning labs" src="https://img.shields.io/badge/PYTHON-LABS-df92fa?style=for-the-badge&labelColor=0c1734" /></a>
-  </p>
-</div>
+# Hey, I'm Arman.
 
-## ✦ About me
+I like building things to understand how they work — and then testing what happens when they don't.
 
-I'm **Arman**, a developer who likes to turn ideas into working prototypes, test them, and document the results. I build across **Python automation**, **Android/Kotlin**, and **DevOps / reliability tooling**.
+I'm learning my way through **Python, Android development, and infrastructure tooling**. Most of my projects start with a practical question: *Can I make this repeatable? How do I know it actually works? What breaks first?*
 
-- 🔬 **Approach:** reproduce → measure → fix → verify
-- 🛠️ **Focus:** recovery systems, Python tooling, learning labs and Android prototypes
-- 📖 **Habit:** explain what is tested, what is simulated, and what still needs validation
+This GitHub is a workbench, not a highlight reel. You'll find experiments, learning exercises, working prototypes, and the occasional rough edge.
 
-## ⚡ Featured builds
+### On my workbench
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/kadiwalarman1-rgb/GhostDock">☁️ GhostDock</a></h3>
-<b>Evidence-driven service recovery</b>
-<p>Health monitoring, bounded local restart and an optional AWS EC2/SSM recovery path. Generates JSON event journals and HTML recovery receipts.</p>
-<p><code>Python</code> <code>Docker</code> <code>AWS / SSM</code></p>
-<sub>Engineering prototype; live AWS acceptance is not yet established.</sub>
-</td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/kadiwalarman1-rgb/backup-automation">🧪 Backup Recovery Tester</a></h3>
-<b>Prove that a backup can be restored</b>
-<p>SQLite backup verification with manifests, restore checks, integrity validation, test automation and standalone reports.</p>
-<p><code>Python</code> <code>SQLite</code> <code>Docker</code> <code>CI</code></p>
-<sub>Local backup/restore validation, not managed cloud backup.</sub>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/kadiwalarman1-rgb/python-deep-dive">🐍 Python Deep Dive</a></h3>
-<b>Hands-on learning, organized by lab</b>
-<p>Practical Python exercises spanning foundations, OOP, files, databases and Pandas, with runnable scripts and lab documentation.</p>
-<p><code>Python</code> <code>SQLite</code> <code>Pandas</code></p>
-</td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/kadiwalarman1-rgb/extra_work_123hy">📱 Android Experiment Lab</a></h3>
-<b>Original app prototypes</b>
-<p>Small Kotlin Android prototypes including ChatWave and Bounce Lab, with source code and build notes.</p>
-<p><code>Kotlin</code> <code>Android</code> <code>UI</code></p>
-</td>
-</tr>
-</table>
+**01 / [GhostDock](https://github.com/ARMAN-KADIWAL/GhostDock)**  
+A recovery prototype for small Docker services. It checks whether an application is healthy, attempts bounded recovery, and writes down what happened. The local demo is runnable; the live AWS recovery path still needs acceptance testing.  
+`Python` · `Docker` · `AWS/SSM` · `Testing`
 
-### 🧠 Algorithms & foundations
+**02 / [Backup Recovery Tester](https://github.com/ARMAN-KADIWAL/backup-automation)**  
+An answer to a simple question: *if I back something up today, can I actually restore it tomorrow?* It verifies SQLite backups with restore checks, manifests, checksums, and readable reports.  
+`Python` · `SQLite` · `CI`
 
-<a href="https://github.com/kadiwalarman1-rgb/TurboC-Data-Structures-Programs"><b>Turbo C Data Structures Programs</b></a> — 20 C exercises covering sorting, searching, stacks, queues, linked lists, trees and graph traversal.
+**03 / [Python Deep Dive](https://github.com/ARMAN-KADIWAL/python-deep-dive)**  
+My organized set of hands-on Python labs: fundamentals, OOP, files, SQLite, and Pandas. This is where I practice the basics properly instead of skipping straight to frameworks.  
+`Python` · `Pandas` · `Learning by doing`
 
-## 🧰 My engineering toolbox
+### Other things I've built
 
-<div align="center">
-  <img alt="Python" src="https://img.shields.io/badge/Python-0f1d36?style=for-the-badge&logo=python&logoColor=F7CA49" />
-  <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-0f1d36?style=for-the-badge&logo=kotlin&logoColor=AD82F7" />
-  <img alt="Android" src="https://img.shields.io/badge/Android-0f1d36?style=for-the-badge&logo=android&logoColor=3DDC84" />
-  <img alt="Docker" src="https://img.shields.io/badge/Docker-0f1d36?style=for-the-badge&logo=docker&logoColor=46B6FF" />
-  <img alt="SQLite" src="https://img.shields.io/badge/SQLite-0f1d36?style=for-the-badge&logo=sqlite&logoColor=6CB9FF" />
-  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-0f1d36?style=for-the-badge&logo=githubactions&logoColor=9FC3FF" />
-  <img alt="Linux" src="https://img.shields.io/badge/Linux-0f1d36?style=for-the-badge&logo=linux&logoColor=F7CA49" />
-</div>
+- [Android Experiment Lab](https://github.com/ARMAN-KADIWAL/extra_work_123hy) — Kotlin prototypes, including ChatWave and a small bouncing-ball interaction demo.
+- [C & Data Structures Exercises](https://github.com/ARMAN-KADIWAL/TurboC-Data-Structures-Programs) — searching, sorting, stacks, queues, linked lists, trees, and graphs in a legacy Turbo C learning environment.
 
-## 🗺️ Repository map
+### A few working habits
 
-| Track | Repositories | What's inside |
-|:--|:--|:--|
-| **Reliability & DevOps** | [GhostDock](https://github.com/kadiwalarman1-rgb/GhostDock) · [Backup Recovery Tester](https://github.com/kadiwalarman1-rgb/backup-automation) | Monitoring, recovery, verification |
-| **Android experiments** | [Original Android demos](https://github.com/kadiwalarman1-rgb/extra_work_123hy) | Kotlin prototypes and UI experiments |
-| **Python practice** | [Python Deep Dive](https://github.com/kadiwalarman1-rgb/python-deep-dive) | Lab-by-lab learning and projects |
-| **CS foundations** | [Turbo C DSA](https://github.com/kadiwalarman1-rgb/TurboC-Data-Structures-Programs) | Algorithms and data structures |
+I keep coming back to the same loop:
 
-> **Engineering principle:** A beautiful README is only a front door. The real proof lives in code, reproducible tests and clear limitations.
+```text
+make it work  →  try to break it  →  understand why  →  improve it
+```
 
-<div align="center">
-  <a href="https://github.com/kadiwalarman1-rgb?tab=repositories"><b>Explore all public repositories</b></a>
-  <br/><br/>
-  <img src="./assets/footer.svg" alt="Code. Test. Refine. Repeat." width="100%" />
-</div>
+I care about reproducible steps, readable code, and honest project notes. If something is simulated or untested in production, I try to say so.
+
+**Tools I use:** Python, Kotlin, Bash, Linux, SQLite, Docker, Git, and GitHub Actions.
+
+---
+
+<sub>Thanks for stopping by. If you're curious about a project, open its README — I try to document both how it works and what it doesn't do yet.</sub>
+
+[Browse the repositories](https://github.com/ARMAN-KADIWAL?tab=repositories) · [See my recent work](https://github.com/ARMAN-KADIWAL?tab=overview)
