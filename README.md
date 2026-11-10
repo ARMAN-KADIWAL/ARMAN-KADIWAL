@@ -1,48 +1,79 @@
 <p align="center">
-  <img src="./assets/field-notes.svg" alt="Arman Kadiwal — developer field notes" width="100%" />
+  <img src="./assets/studio-notes.svg" alt="Arman Kadiwal — a developer's studio notes" width="100%" />
+  <img src="./assets/ink-accent.gif" alt="A small hand-drawn underline appearing stroke by stroke" width="53%" />
 </p>
 
-# Hey, I'm Arman.
+<h2 align="center">Hey, I'm Arman.</h2>
 
-I like building things to understand how they work — and then testing what happens when they don't.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&amp;weight=500&amp;size=19&amp;duration=3000&amp;pause=1100&amp;color=5D7968&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=36&amp;lines=I+like+making+useful+things.;Python+%2F+Android+%2F+Systems;Build.+Test.+Learn.+Repeat." alt="Animated introduction: I like making useful things; Python / Android / Systems; Build, test, learn, repeat." />
+</p>
 
-I'm learning my way through **Python, Android development, and infrastructure tooling**. Most of my projects start with a practical question: *Can I make this repeatable? How do I know it actually works? What breaks first?*
+I learn best by **building something, finding the parts that break, and fixing them**. That curiosity has taken me from Python exercises and Android experiments to tools for backup verification and service recovery.
 
-This GitHub is a workbench, not a highlight reel. You'll find experiments, learning exercises, working prototypes, and the occasional rough edge.
+Some projects are polished. Others are still experiments. I try to make the distinction clear.
 
-### On my workbench
+### Selected work
 
-**01 / [GhostDock](https://github.com/ARMAN-KADIWAL/GhostDock)**  
-A recovery prototype for small Docker services. It checks whether an application is healthy, attempts bounded recovery, and writes down what happened. The local demo is runnable; the live AWS recovery path still needs acceptance testing.  
-`Python` · `Docker` · `AWS/SSM` · `Testing`
+<table>
+<tr>
+<td width="50%" valign="top">
+<sub>01 / RELIABILITY</sub>
+<h3><a href="https://github.com/ARMAN-KADIWAL/GhostDock">GhostDock</a></h3>
+A small recovery system for Docker services. It checks health, makes a bounded restart attempt, and produces a record of what actually happened.<br/><br/>
+<code>Python</code> <code>Docker</code> <code>AWS / SSM</code><br/>
+<sub>Local demo available. Live AWS acceptance testing is still pending.</sub>
+</td>
+<td width="50%" valign="top">
+<sub>02 / BACKUP &amp; RESTORE</sub>
+<h3><a href="https://github.com/ARMAN-KADIWAL/backup-automation">Backup Recovery Tester</a></h3>
+Because a backup isn't much use if you can't restore it. This project checks SQLite backup integrity and creates repeatable restoration reports.<br/><br/>
+<code>Python</code> <code>SQLite</code> <code>Testing</code><br/>
+<sub>Local backup verification, not a managed cloud backup service.</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<sub>03 / LEARNING LOG</sub>
+<h3><a href="https://github.com/ARMAN-KADIWAL/python-deep-dive">Python Deep Dive</a></h3>
+My hands-on Python labs, from fundamentals and OOP to files, SQL, and Pandas. Small exercises, one concept at a time.<br/><br/>
+<code>Python</code> <code>SQLite</code> <code>Pandas</code>
+</td>
+<td width="50%" valign="top">
+<sub>04 / SMALL EXPERIMENTS</sub>
+<h3><a href="https://github.com/ARMAN-KADIWAL/extra_work_123hy">Android Experiment Lab</a></h3>
+Native Kotlin prototypes and interaction experiments. A place to explore how apps behave and how to build original versions of an idea.<br/><br/>
+<code>Kotlin</code> <code>Android</code>
+</td>
+</tr>
+</table>
 
-**02 / [Backup Recovery Tester](https://github.com/ARMAN-KADIWAL/backup-automation)**  
-An answer to a simple question: *if I back something up today, can I actually restore it tomorrow?* It verifies SQLite backups with restore checks, manifests, checksums, and readable reports.  
-`Python` · `SQLite` · `CI`
+**Also on the shelf:** [20 classic C & data-structure exercises](https://github.com/ARMAN-KADIWAL/TurboC-Data-Structures-Programs) — sorting, queues, stacks, linked lists, trees, and graphs.
 
-**03 / [Python Deep Dive](https://github.com/ARMAN-KADIWAL/python-deep-dive)**  
-My organized set of hands-on Python labs: fundamentals, OOP, files, SQLite, and Pandas. This is where I practice the basics properly instead of skipping straight to frameworks.  
-`Python` · `Pandas` · `Learning by doing`
+### What I work with
 
-### Other things I've built
+`Python` · `Kotlin` · `Linux` · `Bash` · `Docker` · `SQLite` · `Git` · `GitHub Actions`
 
-- [Android Experiment Lab](https://github.com/ARMAN-KADIWAL/extra_work_123hy) — Kotlin prototypes, including ChatWave and a small bouncing-ball interaction demo.
-- [C & Data Structures Exercises](https://github.com/ARMAN-KADIWAL/TurboC-Data-Structures-Programs) — searching, sorting, stacks, queues, linked lists, trees, and graphs in a legacy Turbo C learning environment.
+### One habit I'm trying to keep
 
-### A few working habits
+> Make it work → test the awkward cases → understand the failure → leave better notes.
 
-I keep coming back to the same loop:
+I would rather have a small project with a clear README and reproducible steps than a big one with vague promises.
 
-```text
-make it work  →  try to break it  →  understand why  →  improve it
-```
-
-I care about reproducible steps, readable code, and honest project notes. If something is simulated or untested in production, I try to say so.
-
-**Tools I use:** Python, Kotlin, Bash, Linux, SQLite, Docker, Git, and GitHub Actions.
+<details>
+<summary><b>Contribution trail</b> — a little motion from my actual GitHub activity</summary>
+<br/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/output/snake.svg" />
+  <img alt="Animated snake traced over the real GitHub contribution calendar, generated by GitHub Actions" src="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/output/snake.svg" />
+</picture>
+<br/>
+<sub>Generated from the real contribution calendar. Updates automatically when the workflow runs.</sub>
+</details>
 
 ---
 
-<sub>Thanks for stopping by. If you're curious about a project, open its README — I try to document both how it works and what it doesn't do yet.</sub>
+<sub>Thanks for dropping by. Feel free to browse the code, start with a README, or follow along as these projects improve.</sub>
 
-[Browse the repositories](https://github.com/ARMAN-KADIWAL?tab=repositories) · [See my recent work](https://github.com/ARMAN-KADIWAL?tab=overview)
+[See all repositories](https://github.com/ARMAN-KADIWAL?tab=repositories) · [GhostDock demo](https://github.com/ARMAN-KADIWAL/GhostDock#try-it-in-one-minute)

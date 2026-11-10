@@ -1,21 +1,26 @@
-# Profile README notes
+# Keeping the profile personal
 
-This repository is the public GitHub profile for **ARMAN-KADIWAL**.
+**Theme:** studio notebook, not a neon tech template.
 
-## Design
+- Cover illustration: `assets/studio-notes.svg` (original, static and readable on GitHub)
+- Accent animation: `assets/ink-accent.gif` (original, self-hosted)
+- Typing intro: external [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) service; if unavailable the rest of the page remains readable
+- Contribution trail: `.github/workflows/contribution-trail.yml`, which uses the real GitHub contribution grid
 
-The page uses an editorial, paper-and-ink illustration. No autoplaying animations, artificial trophies, stock portraits, or algorithmic-looking stats.
+## Content choices
 
-- Cover illustration: `assets/field-notes.svg`
-- Main copy: `README.md`
-- Project descriptions should reflect the actual repositories, including their limitations.
+Feature projects that exist and explain what is demonstrated vs. not yet verified.
+Do not invent success rates, badges, milestones, stars, followers, rankings, or production claims.
 
-## Keeping it useful
+## Snake animation
 
-1. Keep the writing conversational and grounded in real work.
-2. Review the featured projects when their scope changes.
-3. Pin the strongest repositories manually in GitHub's **Customize your pins** section.
-4. Don't manufacture activity, stars, rankings, or test outcomes.
-5. If the username changes again, rename this special repository to match it and update links.
+The `output` branch is created on the first successful GitHub Actions run.
+If the picture is unavailable, inspect the [workflow runs](https://github.com/ARMAN-KADIWAL/ARMAN-KADIWAL/actions/workflows/contribution-trail.yml) and verify that Actions have permission to write repository contents.
 
-Old neon banners and the animated terminal were removed from the current repository tree. They remain recoverable from Git history.
+The workflow runs when its file is first pushed, on manual dispatch, and daily at 03:23 UTC. GitHub may delay or disable scheduled runs after long inactivity. The animation is collapsed to keep the profile focused on actual projects.
+
+## Maintenance
+
+Review featured projects quarterly. Pin repositories manually via "Customize your pins" in the GitHub profile UI. The public display name can be adjusted under GitHub Settings; it is not changed by this README.
+
+The old field-notes cover is superseded by `studio-notes.svg` and remains in Git history.
