@@ -1,12 +1,19 @@
 <p align="center">
-  <img src="./assets/studio-notes.svg" alt="Arman Kadiwal — a developer's studio notes" width="100%" />
-  <img src="./assets/ink-accent.gif" alt="A small hand-drawn underline appearing stroke by stroke" width="53%" />
+  <picture>
+    <source media="(max-width: 700px) and (prefers-reduced-motion: reduce)" srcset="./assets/motion/hero-mobile-still.png" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/hero-still.png" />
+    <source media="(max-width: 700px)" srcset="./assets/motion/hero-mobile.gif" />
+    <img src="./assets/motion/hero.gif" alt="Arman Kadiwal — Python, Android and systems. An animated notebook cover with moving name lettering, a drawing underline and a build, test, improve loop." width="100%" />
+  </picture>
 </p>
 
-<h2 align="center">Hey, I'm Arman.</h2>
-
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&amp;weight=500&amp;size=19&amp;duration=3000&amp;pause=1100&amp;color=5D7968&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=36&amp;lines=I+like+making+useful+things.;Python+%2F+Android+%2F+Systems;Build.+Test.+Learn.+Repeat." alt="Animated introduction: I like making useful things; Python / Android / Systems; Build, test, learn, repeat." />
+  <picture>
+    <source media="(max-width: 700px) and (prefers-reduced-motion: reduce)" srcset="./assets/motion/intro-mobile-still.png" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/intro-still.png" />
+    <source media="(max-width: 700px)" srcset="./assets/motion/intro-mobile.gif" />
+    <img src="./assets/motion/intro.gif" alt="A developer's notebook. Small projects, real lessons. Build, test, learn, repeat; make it work and understand why." width="100%" />
+  </picture>
 </p>
 
 I learn best by **building something, finding the parts that break, and fixing them**. That curiosity has taken me from Python exercises and Android experiments to tools for backup verification and service recovery.
@@ -18,32 +25,58 @@ Some projects are polished. Others are still experiments. I try to make the dist
 <table>
 <tr>
 <td width="50%" valign="top">
-<sub>01 / RELIABILITY</sub>
-<h3><a href="https://github.com/ARMAN-KADIWAL/GhostDock">GhostDock</a></h3>
+<a href="https://github.com/ARMAN-KADIWAL/GhostDock">
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/ghostdock-still.png" />
+  <img src="./assets/motion/ghostdock.gif" alt="01 / Reliability — GhostDock. An animated service recovery loop." width="100%" />
+</picture>
+</a>
+<br/><br/>
 A small recovery system for Docker services. It checks health, makes a bounded restart attempt, and produces a record of what actually happened.<br/><br/>
-<code>Python</code> <code>Docker</code> <code>AWS / SSM</code><br/>
-<sub>Local demo available. Live AWS acceptance testing is still pending.</sub>
+<code>Python</code> <code>Docker</code> <code>AWS / SSM</code><br/><br/>
+<sub>Local demo available. Live AWS acceptance testing is still pending.</sub><br/><br/>
+<a href="https://github.com/ARMAN-KADIWAL/GhostDock"><b>Explore GhostDock →</b></a>
 </td>
 <td width="50%" valign="top">
-<sub>02 / BACKUP &amp; RESTORE</sub>
-<h3><a href="https://github.com/ARMAN-KADIWAL/backup-automation">Backup Recovery Tester</a></h3>
+<a href="https://github.com/ARMAN-KADIWAL/backup-automation">
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/backup-still.png" />
+  <img src="./assets/motion/backup.gif" alt="02 / Backup and restore — Backup Recovery Tester. An animated database integrity check." width="100%" />
+</picture>
+</a>
+<br/><br/>
 Because a backup isn't much use if you can't restore it. This project checks SQLite backup integrity and creates repeatable restoration reports.<br/><br/>
-<code>Python</code> <code>SQLite</code> <code>Testing</code><br/>
-<sub>Local backup verification, not a managed cloud backup service.</sub>
+<code>Python</code> <code>SQLite</code> <code>Testing</code><br/><br/>
+<sub>Local backup verification, not a managed cloud backup service.</sub><br/><br/>
+<a href="https://github.com/ARMAN-KADIWAL/backup-automation"><b>Explore the backup tester →</b></a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<sub>03 / LEARNING LOG</sub>
-<h3><a href="https://github.com/ARMAN-KADIWAL/python-deep-dive">Python Deep Dive</a></h3>
-My hands-on Python labs, from fundamentals and OOP to files, SQL, and Pandas. Small exercises, one concept at a time.<br/><br/>
-<code>Python</code> <code>SQLite</code> <code>Pandas</code>
+<a href="https://github.com/ARMAN-KADIWAL/python-deep-dive">
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/python-still.png" />
+  <img src="./assets/motion/python.gif" alt="03 / Python labs — Python Deep Dive. An animated code notebook." width="100%" />
+</picture>
+</a>
+<br/><br/>
+My hands-on Python labs, from fundamentals and OOP to data analysis, concurrency, async programming and socket networking.<br/><br/>
+<code>Python</code> <code>SQLite</code> <code>Pandas</code> <code>Networking</code><br/><br/>
+<sub>Labs 75–82 include runnable examples, behavior tests and verification logs.</sub><br/><br/>
+<a href="https://github.com/ARMAN-KADIWAL/python-deep-dive"><b>Browse the Python labs →</b></a>
 </td>
 <td width="50%" valign="top">
-<sub>04 / SMALL EXPERIMENTS</sub>
-<h3><a href="https://github.com/ARMAN-KADIWAL/extra_work_123hy">Android Experiment Lab</a></h3>
+<a href="https://github.com/ARMAN-KADIWAL/extra_work_123hy">
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/android-still.png" />
+  <img src="./assets/motion/android.gif" alt="04 / Kotlin and Android — Android Experiments. An animated phone interaction." width="100%" />
+</picture>
+</a>
+<br/><br/>
 Native Kotlin prototypes and interaction experiments. A place to explore how apps behave and how to build original versions of an idea.<br/><br/>
-<code>Kotlin</code> <code>Android</code>
+<code>Kotlin</code> <code>Android</code><br/><br/>
+<sub>Experiments and prototypes, with their current scope described in the repository.</sub><br/><br/>
+<a href="https://github.com/ARMAN-KADIWAL/extra_work_123hy"><b>Open the experiment lab →</b></a>
 </td>
 </tr>
 </table>
@@ -52,28 +85,38 @@ Native Kotlin prototypes and interaction experiments. A place to explore how app
 
 ### What I work with
 
-`Python` · `Kotlin` · `Linux` · `Bash` · `Docker` · `SQLite` · `Git` · `GitHub Actions`
+<picture>
+  <source media="(max-width: 700px) and (prefers-reduced-motion: reduce)" srcset="./assets/motion/toolkit-mobile-still.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/toolkit-still.png" />
+  <source media="(max-width: 700px)" srcset="./assets/motion/toolkit-mobile.gif" />
+  <img src="./assets/motion/toolkit.gif" alt="Tools I use: Python, Kotlin, Linux, Bash, Docker, SQLite, Git and GitHub Actions. A moving ink highlight travels across the toolkit." width="100%" />
+</picture>
 
 ### One habit I'm trying to keep
+
+<picture>
+  <source media="(max-width: 700px) and (prefers-reduced-motion: reduce)" srcset="./assets/motion/method-mobile-still.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/method-still.png" />
+  <source media="(max-width: 700px)" srcset="./assets/motion/method-mobile.gif" />
+  <img src="./assets/motion/method.gif" alt="Keep iterating: build, test, learn, repeat. An animated dot connects the four steps." width="100%" />
+</picture>
 
 > Make it work → test the awkward cases → understand the failure → leave better notes.
 
 I would rather have a small project with a clear README and reproducible steps than a big one with vague promises.
 
-<details>
-<summary><b>Contribution trail</b> — a little motion from my actual GitHub activity</summary>
-<br/>
+### Contribution trail
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/output/snake.svg" />
-  <img alt="Animated snake traced over the real GitHub contribution calendar, generated by GitHub Actions" src="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/output/snake.svg" />
+  <img alt="Animated snake traced over Arman's real GitHub contribution calendar, generated by GitHub Actions." src="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/output/snake.svg" width="100%" />
 </picture>
-<br/>
-<sub>Generated from the real contribution calendar. Updates automatically when the workflow runs.</sub>
-</details>
+
+<sub>Drawn from my actual contribution calendar. The existing GitHub Actions workflow refreshes it daily.</sub>
 
 ---
 
-<sub>Thanks for dropping by. Feel free to browse the code, start with a README, or follow along as these projects improve.</sub>
+Thanks for dropping by. Browse the code, start with a README, or follow along as these projects improve.
 
-[See all repositories](https://github.com/ARMAN-KADIWAL?tab=repositories) · [GhostDock demo](https://github.com/ARMAN-KADIWAL/GhostDock#try-it-in-one-minute)
+[All repositories](https://github.com/ARMAN-KADIWAL?tab=repositories) · [GhostDock demo](https://github.com/ARMAN-KADIWAL/GhostDock#try-it-in-one-minute) · [How this profile moves](./docs/PROFILE_MAINTENANCE.md)

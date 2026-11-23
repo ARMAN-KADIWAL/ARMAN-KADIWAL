@@ -1,0 +1,112 @@
+{
+  "animations": [
+    {
+      "file": "assets/motion/hero.gif",
+      "width": 1280,
+      "height": 448,
+      "frames": 96,
+      "duration_ms": 7680,
+      "bytes": 1133387,
+      "still": "assets/motion/hero-still.png"
+    },
+    {
+      "file": "assets/motion/hero-mobile.gif",
+      "width": 720,
+      "height": 664,
+      "frames": 96,
+      "duration_ms": 7680,
+      "bytes": 598720,
+      "still": "assets/motion/hero-mobile-still.png"
+    },
+    {
+      "file": "assets/motion/intro.gif",
+      "width": 1280,
+      "height": 88,
+      "frames": 147,
+      "duration_ms": 12000,
+      "bytes": 110205,
+      "still": "assets/motion/intro-still.png"
+    },
+    {
+      "file": "assets/motion/intro-mobile.gif",
+      "width": 720,
+      "height": 155,
+      "frames": 69,
+      "duration_ms": 12000,
+      "bytes": 72212,
+      "still": "assets/motion/intro-mobile-still.png"
+    },
+    {
+      "file": "assets/motion/ghostdock.gif",
+      "width": 600,
+      "height": 132,
+      "frames": 64,
+      "duration_ms": 5120,
+      "bytes": 58935,
+      "still": "assets/motion/ghostdock-still.png"
+    },
+    {
+      "file": "assets/motion/backup.gif",
+      "width": 600,
+      "height": 132,
+      "frames": 64,
+      "duration_ms": 5120,
+      "bytes": 62610,
+      "still": "assets/motion/backup-still.png"
+    },
+    {
+      "file": "assets/motion/python.gif",
+      "width": 600,
+      "height": 132,
+      "frames": 64,
+      "duration_ms": 5120,
+      "bytes": 53951,
+      "still": "assets/motion/python-still.png"
+    },
+    {
+      "file": "assets/motion/android.gif",
+      "width": 600,
+      "height": 132,
+      "frames": 64,
+      "duration_ms": 5120,
+      "bytes": 63056,
+      "still": "assets/motion/android-still.png"
+    },
+    {
+      "file": "assets/motion/toolkit.gif",
+      "width": 1280,
+      "height": 205,
+      "frames": 96,
+      "duration_ms": 7680,
+      "bytes": 191891,
+      "still": "assets/motion/toolkit-still.png"
+    },
+    {
+      "file": "assets/motion/toolkit-mobile.gif",
+      "width": 720,
+      "height": 379,
+      "frames": 96,
+      "duration_ms": 7680,
+      "bytes": 208761,
+      "still": "assets/motion/toolkit-mobile-still.png"
+    },
+    {
+      "file": "assets/motion/method.gif",
+      "width": 1280,
+      "height": 119,
+      "frames": 80,
+      "duration_ms": 6400,
+      "bytes": 60022,
+      "still": "assets/motion/method-still.png"
+    },
+    {
+      "file": "assets/motion/method-mobile.gif",
+      "width": 720,
+      "height": 188,
+      "frames": 80,
+      "duration_ms": 6400,
+      "bytes": 58924,
+      "still": "assets/motion/method-mobile-still.png"
+    }
+  ]
+}
