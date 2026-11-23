@@ -1,57 +1,30 @@
-# Keeping the profile personal
+# Profile artwork
 
-The profile uses a warm studio-notebook palette: paper, dark green ink, terracotta and sage. The original `studio-notes.svg` and `ink-accent.gif` remain in the repository as earlier artwork.
+The cover is an animated pen plotter drawing my initials. The nib, carriage and stroke share one drawing path. The lettering has a separate copper sweep. The README provides day and night covers, a narrower composition for phones and still posters for readers who prefer reduced motion.
 
-## Original motion assets
+## GhostDock replay
 
-All twelve GIFs under `assets/motion/` are original, self-hosted graphics: eight designs and four narrower mobile layouts. They contain no remote requests, scripts, credentials or synthetic activity statistics.
+The replay uses the sequence number, elapsed seconds and state from each of the ten events in one simulated GhostDock incident. Each entry stays on screen for the same amount of time so events at the same timestamp remain visible. The clock printed on the image comes from the journal. The reduced-motion poster shows the final entry.
 
-| Asset | Motion |
-| --- | --- |
-| `hero.gif` | Staggered name lettering, moving ink color, a drawing underline and an illustrated build/test/improve loop |
-| `intro.gif` | Three short typewriter messages |
-| `ghostdock.gif` | A travelling marker around service nodes |
-| `backup.gif` | An orbit around a database illustration |
-| `python.gif` | A moving code-line marker |
-| `android.gif` | A phone interaction illustration |
-| `toolkit.gif` | An ink highlight across eight tools |
-| `method.gif` | A marker connecting build, test, learn and repeat |
+[Pinned source journal](https://github.com/ARMAN-KADIWAL/GhostDock/blob/62c1c6c57bd19d5c29d6a08061875d0d2092b5a2/docs/examples/simulated-recovery/events.jsonl) · [Local replay data](../assets/workbench/ghostdock-trace.json)
 
-Each GIF loops and has a matching `-still.png`. The README uses `<picture>` to select the static image when the reader requests reduced motion. The opening GIF frames also contain complete, readable text. Name motion stays inside the cover image: GitHub's sidebar name and normal README text do not accept custom JavaScript or page-wide CSS animations.
+To show another incident, copy those three fields from a simulated journal in sequence order, update its source commit in the data file, then update the profile’s transcript and links. Both the replay and the GitHub-readable table refer to that same recording.
 
-The cover, introduction, toolkit and method strip switch to dedicated mobile artwork at viewport widths up to 700 pixels, so text does not simply shrink with the desktop design.
+## Rendering
 
-GitHub readers can control GIF playback under **Settings → Accessibility → Motion → Autoplay animated images**. See [GitHub's accessibility documentation](https://docs.github.com/en/account-and-profile/how-tos/account-settings/managing-accessibility-settings).
+Use Python 3.10 or newer, Pillow and the Liberation fonts. On Ubuntu the font package is `fonts-liberation`. Set `PROFILE_FONT_DIR` if the font files live somewhere else.
 
-## Rebuild the artwork
-
-Use Python 3.10 or newer, Pillow, and the Liberation fonts. On Ubuntu, the font package is `fonts-liberation`.
-
-```bash
+```sh
 python -m venv .venv
-source .venv/bin/activate
+. .venv/bin/activate
 python -m pip install -r scripts/requirements-profile.txt
-python scripts/render_profile_motion.py
+python scripts/render_workbench.py
 ```
 
-To render just one asset:
+Use `python scripts/render_workbench.py --only cover-night` for one animation, or add `--poster` to preview a still. The workbench renderer shares the drawing and GIF helpers in `scripts/render_profile_motion.py`. That older renderer also rebuilds the moving toolkit under `assets/motion/`.
 
-```bash
-python scripts/render_profile_motion.py --only hero
-```
+## Contribution calendar
 
-If the fonts are installed elsewhere, set `PROFILE_FONT_DIR` to the directory containing the Liberation `.ttf` files. The script is deterministic, uses a shared palette to avoid color shimmer, and writes dimensions, frame counts, duration and file sizes to `assets/motion/manifest.json` on a full rebuild.
+The existing workflow draws the snake from my public GitHub contribution calendar and publishes its light and dark versions on the `output` branch. The reduced-motion version links straight to GitHub’s calendar. The workflow is scheduled daily at 03:23 UTC and can also be run manually.
 
-## Content choices
-
-Feature projects that exist. Describe what is demonstrated and what remains unverified. Do not invent success rates, badges, milestones, stars, followers, rankings or production claims. The moving checklist and project illustrations are decorative process drawings, not live monitoring or benchmark results.
-
-## Contribution snake
-
-The existing `.github/workflows/contribution-trail.yml` generates `snake.svg` and `snake-dark.svg` from the real contribution calendar and publishes them to the `output` branch. The contribution section is now visible without expanding a disclosure.
-
-The schedule is daily at 03:23 UTC, with manual dispatch also available. GitHub may delay scheduled runs or disable them after prolonged inactivity. Inspect the [workflow runs](https://github.com/ARMAN-KADIWAL/ARMAN-KADIWAL/actions/workflows/contribution-trail.yml) if the images stop updating.
-
-## Maintenance
-
-Review featured projects periodically. Pin repositories manually through **Customize your pins** in the GitHub profile UI. The public display name and avatar are separate account settings; updating this README changes the illustrated name inside the profile, not those account fields.
+[Contribution workflow](https://github.com/ARMAN-KADIWAL/ARMAN-KADIWAL/actions/workflows/contribution-trail.yml)

@@ -1,122 +1,92 @@
-<p align="center">
-  <picture>
-    <source media="(max-width: 700px) and (prefers-reduced-motion: reduce)" srcset="./assets/motion/hero-mobile-still.png" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/hero-still.png" />
-    <source media="(max-width: 700px)" srcset="./assets/motion/hero-mobile.gif" />
-    <img src="./assets/motion/hero.gif" alt="Arman Kadiwal — Python, Android and systems. An animated notebook cover with moving name lettering, a drawing underline and a build, test, improve loop." width="100%" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(max-width: 700px) and (prefers-reduced-motion: reduce)" srcset="./assets/motion/intro-mobile-still.png" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/intro-still.png" />
-    <source media="(max-width: 700px)" srcset="./assets/motion/intro-mobile.gif" />
-    <img src="./assets/motion/intro.gif" alt="A developer's notebook. Small projects, real lessons. Build, test, learn, repeat; make it work and understand why." width="100%" />
-  </picture>
-</p>
-
-I learn best by **building something, finding the parts that break, and fixing them**. That curiosity has taken me from Python exercises and Android experiments to tools for backup verification and service recovery.
-
-Some projects are polished. Others are still experiments. I try to make the distinction clear.
-
-### Selected work
-
-<table>
-<tr>
-<td width="50%" valign="top">
-<a href="https://github.com/ARMAN-KADIWAL/GhostDock">
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/ghostdock-still.png" />
-  <img src="./assets/motion/ghostdock.gif" alt="01 / Reliability — GhostDock. An animated service recovery loop." width="100%" />
-</picture>
-</a>
-<br/><br/>
-A small recovery system for Docker services. It checks health, makes a bounded restart attempt, and produces a record of what actually happened.<br/><br/>
-<code>Python</code> <code>Docker</code> <code>AWS / SSM</code><br/><br/>
-<sub>Local demo available. Live AWS acceptance testing is still pending.</sub><br/><br/>
-<a href="https://github.com/ARMAN-KADIWAL/GhostDock"><b>Explore GhostDock →</b></a>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/ARMAN-KADIWAL/backup-automation">
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/backup-still.png" />
-  <img src="./assets/motion/backup.gif" alt="02 / Backup and restore — Backup Recovery Tester. An animated database integrity check." width="100%" />
-</picture>
-</a>
-<br/><br/>
-Because a backup isn't much use if you can't restore it. This project checks SQLite backup integrity and creates repeatable restoration reports.<br/><br/>
-<code>Python</code> <code>SQLite</code> <code>Testing</code><br/><br/>
-<sub>Local backup verification, not a managed cloud backup service.</sub><br/><br/>
-<a href="https://github.com/ARMAN-KADIWAL/backup-automation"><b>Explore the backup tester →</b></a>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<a href="https://github.com/ARMAN-KADIWAL/python-deep-dive">
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/python-still.png" />
-  <img src="./assets/motion/python.gif" alt="03 / Python labs — Python Deep Dive. An animated code notebook." width="100%" />
-</picture>
-</a>
-<br/><br/>
-My hands-on Python labs, from fundamentals and OOP to data analysis, concurrency, async programming and socket networking.<br/><br/>
-<code>Python</code> <code>SQLite</code> <code>Pandas</code> <code>Networking</code><br/><br/>
-<sub>Labs 75–82 include runnable examples, behavior tests and verification logs.</sub><br/><br/>
-<a href="https://github.com/ARMAN-KADIWAL/python-deep-dive"><b>Browse the Python labs →</b></a>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/ARMAN-KADIWAL/extra_work_123hy">
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/android-still.png" />
-  <img src="./assets/motion/android.gif" alt="04 / Kotlin and Android — Android Experiments. An animated phone interaction." width="100%" />
-</picture>
-</a>
-<br/><br/>
-Native Kotlin prototypes and interaction experiments. A place to explore how apps behave and how to build original versions of an idea.<br/><br/>
-<code>Kotlin</code> <code>Android</code><br/><br/>
-<sub>Experiments and prototypes, with their current scope described in the repository.</sub><br/><br/>
-<a href="https://github.com/ARMAN-KADIWAL/extra_work_123hy"><b>Open the experiment lab →</b></a>
-</td>
-</tr>
-</table>
-
-**Also on the shelf:** [20 classic C & data-structure exercises](https://github.com/ARMAN-KADIWAL/TurboC-Data-Structures-Programs) — sorting, queues, stacks, linked lists, trees, and graphs.
-
-### What I work with
-
-<picture>
-  <source media="(max-width: 700px) and (prefers-reduced-motion: reduce)" srcset="./assets/motion/toolkit-mobile-still.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/toolkit-still.png" />
-  <source media="(max-width: 700px)" srcset="./assets/motion/toolkit-mobile.gif" />
-  <img src="./assets/motion/toolkit.gif" alt="Tools I use: Python, Kotlin, Linux, Bash, Docker, SQLite, Git and GitHub Actions. A moving ink highlight travels across the toolkit." width="100%" />
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 700px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-night-mobile-still.png" />
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-day-mobile-still.png" />
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-night-still.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-day-still.png" />
+  <source media="(max-width: 700px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-night-mobile.gif" />
+  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-day-mobile.gif" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-night.gif" />
+  <img src="./assets/workbench/cover-day.gif" width="100%" alt="Arman Kadiwal. Python, systems and Android. A pen plotter draws my initials." />
 </picture>
 
-### One habit I'm trying to keep
+I’m Arman. I write Python tools to find out whether a service recovered and whether a backup restores the right data. My Android projects are where I experiment with touch and motion.
+
+[GhostDock replay](#ghostdock) · [More projects](#more-projects) · [Contribution trail](#contribution-trail)
+
+## GhostDock
+
+GhostDock began with a Bash exit code. I could tell when a restart command finished. To find out whether the app had recovered, I had to check its HTTP response for the expected app identity.
+
+In this **simulation**, three probes fail. GhostDock tries one local restart, then exercises its EC2 replacement path. The replay follows the ten entries in the saved incident journal. Its clock shows simulated seconds.
 
 <picture>
-  <source media="(max-width: 700px) and (prefers-reduced-motion: reduce)" srcset="./assets/motion/method-mobile-still.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/motion/method-still.png" />
-  <source media="(max-width: 700px)" srcset="./assets/motion/method-mobile.gif" />
-  <img src="./assets/motion/method.gif" alt="Keep iterating: build, test, learn, repeat. An animated dot connects the four steps." width="100%" />
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/replay-mobile-still.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/replay-still.png" />
+  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/replay-mobile.gif" />
+  <img src="./assets/workbench/replay.gif" width="100%" alt="GhostDock simulated journal. Three health probes fail, one local restart is attempted, and the replacement application is verified at 22 seconds on the simulated clock. All ten entries are available below." />
 </picture>
 
-> Make it work → test the awkward cases → understand the failure → leave better notes.
+[Run the local demo](https://github.com/ARMAN-KADIWAL/GhostDock#try-it-in-one-minute) · [Read the event journal](https://github.com/ARMAN-KADIWAL/GhostDock/blob/62c1c6c57bd19d5c29d6a08061875d0d2092b5a2/docs/examples/simulated-recovery/events.jsonl) · [Explore the architecture](https://github.com/ARMAN-KADIWAL/GhostDock/blob/main/docs/architecture.md)
 
-I would rather have a small project with a clear README and reproducible steps than a big one with vague promises.
+<details>
+<summary><strong>Inspect the ten journal entries</strong></summary>
 
-### Contribution trail
+| Sequence | Demo clock | Recorded state |
+| ---: | ---: | --- |
+| 0 | 0 s | `CREATED` |
+| 1 | 0 s | `WATCHING` |
+| 2 | 1 s | `SUSPECT` |
+| 3 | 2 s | `SUSPECT` |
+| 4 | 3 s | `SUSPECT` |
+| 5 | 3 s | `REPAIRING_LOCAL` |
+| 6 | 5 s | `CLOUD_PREFLIGHT` |
+| 7 | 5 s | `PROVISIONING` |
+| 8 | 17 s | `VERIFYING_CLOUD` |
+| 9 | 22 s | `RECOVERED_CLOUD` |
+
+The demo records a successful application check through simulated AWS Systems Manager. Live EC2/SSM acceptance testing is still pending. [Validation notes](https://github.com/ARMAN-KADIWAL/GhostDock/blob/main/docs/validation.md)
+
+</details>
+
+## More projects
+
+### <picture><source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/glyph-backup-still.png" /><img src="./assets/workbench/glyph-backup.gif" align="absmiddle" width="28" height="28" alt="" /></picture> Backup Recovery Tester
+
+One restore test changes a single order amount and keeps the row count the same. After restoring the SQLite backup, the verifier compares table contents with the saved hashes and catches the change.
+
+[Run the restore demo](https://github.com/ARMAN-KADIWAL/backup-automation#single-command-demo) · [Read the test](https://github.com/ARMAN-KADIWAL/backup-automation/blob/bfd56bca604638ce340b5f53af5694843e454fed/tests/test_core.py#L40)
+
+### <picture><source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/glyph-python-still.png" /><img src="./assets/workbench/glyph-python.gif" align="absmiddle" width="28" height="28" alt="" /></picture> Python Deep Dive
+
+Lab 82 runs a TCP server that handles multiple clients at once. The validation run for Labs 75–82 passed **55 automated tests and 35 example runs**, including local socket exchanges.
+
+[Open the multi-client lab](https://github.com/ARMAN-KADIWAL/python-deep-dive/tree/main/Lab%2082) · [Check the results](https://github.com/ARMAN-KADIWAL/python-deep-dive/blob/68dcb9dc06aaf7d51a5d87eaf9bb29434f8692a8/progress/labs75-82-verification.json) · [See the Python 3.12 and 3.13 runs](https://github.com/ARMAN-KADIWAL/python-deep-dive/actions/runs/45047194870)
+
+### <picture><source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/glyph-android-still.png" /><img src="./assets/workbench/glyph-android.gif" align="absmiddle" width="28" height="28" alt="" /></picture> Android experiments
+
+In Bounce Lab, tapping or dragging creates bubbles that fall, squash and rebound on an Android canvas. ChatWave explores a different interaction problem with local conversations, search and reactions.
+
+[Open the Bounce Lab release](https://github.com/ARMAN-KADIWAL/extra_work_123hy/releases/tag/bounce-lab-v1.0.0) · [Read the drawing code](https://github.com/ARMAN-KADIWAL/extra_work_123hy/blob/main/android-bounce-lab/app/src/main/java/com/example/bouncelab/MainActivity.kt) · [Explore ChatWave](https://github.com/ARMAN-KADIWAL/extra_work_123hy#android-project-chatwave)
+
+I also keep my [C and data structure exercises](https://github.com/ARMAN-KADIWAL/TurboC-Data-Structures-Programs) here, from stacks and queues to trees and graphs.
+
+## My tools
 
 <picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/motion/toolkit-mobile-still.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/motion/toolkit-still.png" />
+  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/motion/toolkit-mobile.gif" />
+  <img src="./assets/motion/toolkit.gif" width="100%" alt="Python, Kotlin, Linux, Bash, Docker, SQLite, Git and GitHub Actions." />
+</picture>
+
+## Contribution trail
+
+<a href="https://github.com/ARMAN-KADIWAL#js-contribution-activity-description">
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/calendar-link.png" />
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/output/snake.svg" />
-  <img alt="Animated snake traced over Arman's real GitHub contribution calendar, generated by GitHub Actions." src="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/output/snake.svg" width="100%" />
+  <img src="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/output/snake.svg" width="100%" alt="A snake follows my GitHub contribution calendar. Open the calendar." />
 </picture>
+</a>
 
-<sub>Drawn from my actual contribution calendar. The existing GitHub Actions workflow refreshes it daily.</sub>
-
----
-
-Thanks for dropping by. Browse the code, start with a README, or follow along as these projects improve.
-
-[All repositories](https://github.com/ARMAN-KADIWAL?tab=repositories) · [GhostDock demo](https://github.com/ARMAN-KADIWAL/GhostDock#try-it-in-one-minute) · [How this profile moves](./docs/PROFILE_MAINTENANCE.md)
+[Browse all repositories](https://github.com/ARMAN-KADIWAL?tab=repositories) · [How the artwork is made](./docs/PROFILE_MAINTENANCE.md)

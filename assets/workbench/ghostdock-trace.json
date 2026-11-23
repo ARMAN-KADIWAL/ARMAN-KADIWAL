@@ -1,0 +1,56 @@
+{
+  "source": "https://github.com/ARMAN-KADIWAL/GhostDock/blob/62c1c6c57bd19d5c29d6a08061875d0d2092b5a2/docs/examples/simulated-recovery/events.jsonl",
+  "simulation": true,
+  "events": [
+    {
+      "sequence": 0,
+      "elapsed_seconds": 0,
+      "status": "CREATED"
+    },
+    {
+      "sequence": 1,
+      "elapsed_seconds": 0,
+      "status": "WATCHING"
+    },
+    {
+      "sequence": 2,
+      "elapsed_seconds": 1,
+      "status": "SUSPECT"
+    },
+    {
+      "sequence": 3,
+      "elapsed_seconds": 2,
+      "status": "SUSPECT"
+    },
+    {
+      "sequence": 4,
+      "elapsed_seconds": 3,
+      "status": "SUSPECT"
+    },
+    {
+      "sequence": 5,
+      "elapsed_seconds": 3,
+      "status": "REPAIRING_LOCAL"
+    },
+    {
+      "sequence": 6,
+      "elapsed_seconds": 5,
+      "status": "CLOUD_PREFLIGHT"
+    },
+    {
+      "sequence": 7,
+      "elapsed_seconds": 5,
+      "status": "PROVISIONING"
+    },
+    {
+      "sequence": 8,
+      "elapsed_seconds": 17,
+      "status": "VERIFYING_CLOUD"
+    },
+    {
+      "sequence": 9,
+      "elapsed_seconds": 22,
+      "status": "RECOVERED_CLOUD"
+    }
+  ]
+}
