@@ -1,4 +1,4 @@
-"""Render the pen plotter cover and GhostDock replay for the profile README."""
+"""Render the pen plotter cover, incident replay and illustrated project studies."""
 
 import argparse
 import json
@@ -8,7 +8,16 @@ from functools import lru_cache
 from itertools import pairwise
 
 from PIL import Image, ImageChops, ImageDraw
-from render_profile_motion import ROOT, SCALE, Canvas, font, icon, write_animation
+from render_profile_motion import (
+    ROOT,
+    SCALE,
+    Canvas,
+    blend,
+    font,
+    icon,
+    write_animation,
+)
+from render_project_studies import STUDIES, study_frame
 
 ASSETS = ROOT / "assets" / "workbench"
 
@@ -142,12 +151,28 @@ def draw_bed(plotter, palette):
         plotter.screw(x, y, 4.2)
 
 
-# Pen-up travel between strokes is part of the path, including the return home.
+def cubic(start, first, second, end, steps=20):
+    points = []
+    for index in range(steps + 1):
+        t = index / steps
+        u = 1 - t
+        points.append(
+            tuple(
+                u**3 * a + 3 * u**2 * t * b + 3 * u * t**2 * c + t**3 * d
+                for a, b, c, d in zip(start, first, second, end)
+            )
+        )
+    return points
+
+
+# The final stroke is a continuous, low-slung signature flourish.
 STROKES = [
     [(43, 115), (71, 40), (101, 115)],
     [(54, 87), (90, 87)],
     [(132, 115), (132, 40)],
     [(187, 40), (134, 82), (190, 115)],
+    cubic((43, 124), (76, 142), (153, 116), (183, 123))
+    + cubic((183, 123), (196, 126), (215, 124), (207, 117), 12)[1:],
 ]
 
 
@@ -163,26 +188,47 @@ def pen_route():
 
 MOVES = pen_route()
 ROUTE_LENGTH = sum(move[3] for move in MOVES)
+RETURN_LENGTH = MOVES[-1][3]
+POSTER_DISTANCE = ROUTE_LENGTH - 0.90 * RETURN_LENGTH
 
 
 def draw_plotter_frame(plotter, phase):
-    # The poster opens near the completed monogram, with both initials visible.
-    offset = ((phase + 0.865) % 1) * ROUTE_LENGTH
+    offset = (phase * ROUTE_LENGTH + POSTER_DISTANCE) % ROUTE_LENGTH
+    # As the pen goes home, the ink fades into the guide for the next pass.
+    home = max(0, (offset - ROUTE_LENGTH + RETURN_LENGTH) / RETURN_LENGTH)
+    fade = max(0, (home - 0.26) / 0.74)
+    ink = blend("#ffba78", "#819b86", fade**2 * (3 - 2 * fade))
     x, y = STROKES[0][0]
     lift = 0
     for stroke in STROKES:
-        plotter.line([(px, py, 5.3) for px, py in stroke], "#809b84", 1.35)
+        plotter.line([(px, py, 5.3) for px, py in stroke], "#819b86", 1.3)
     for start, end, writing, length in MOVES:
         fraction = min(1, offset / length)
-        x = start[0] + (end[0] - start[0]) * fraction
-        y = start[1] + (end[1] - start[1]) * fraction
+        travel = fraction if writing else fraction**2 * (3 - 2 * fraction)
+        dx, dy = end[0] - start[0], end[1] - start[1]
+        x, y = start[0] + dx * travel, start[1] + dy * travel
         if writing:
-            plotter.line([(*start, 5.7), (x, y, 5.7)], "#ffbe82", 2.15)
-        lift = 0 if writing else 5 * math.sin(math.pi * fraction)
+            plotter.line([(*start, 5.7), (x, y, 5.7)], ink, 2.25 - 0.95 * fade)
+            tail = max(0, (offset - 9) / length)
+            if tail < fraction:
+                plotter.line(
+                    [(start[0] + dx * tail, start[1] + dy * tail, 5.8), (x, y, 5.8)],
+                    "#ffe5aa",
+                    1.45,
+                )
+        lift = 0 if writing else 7 * math.sin(math.pi * fraction)
         if offset <= length:
             break
         offset -= length
     gantry_y = y - 11
+    # A flexible cable bows behind the right rail as the gantry moves.
+    cable = cubic(
+        (237, 9, 12), (256, 10, 27), (259, gantry_y - 3, 37), (237, gantry_y + 1, 30)
+    )
+    plotter.line(cable, "#243f37", 4.2)
+    plotter.line(cable, "#8d9d89", 1.15)
+    for joint in range(3, len(cable) - 1, 4):
+        plotter.line(cable[joint : joint + 2], "#536458", 2.7)
     for rail_x in (11, 237):
         plotter.slab(
             rail_x - 6, gantry_y - 4, 12, 19, 22, 12, ("#59766a", "#25473d", "#324f44")
@@ -207,6 +253,7 @@ def draw_plotter_frame(plotter, phase):
     plotter.line([(x - 0.7, y, 16 + lift), (x - 0.7, y, 43 + lift)], "#ffe1a5", 1.3)
     plotter.line([(x, y, 6 + lift), (x, y, 14 + lift)], "#ecc792", 1.65)
     plotter.line([(x, y, 39 + lift), (x, y, 42 + lift)], "#724e39", 4.2)
+    return writing
 
 
 def cover_layout(mobile):
@@ -278,19 +325,43 @@ def cover_frame(phase, palette, mobile):
     canvas = Canvas(*size, palette.bg)
     canvas.image.paste(cover_plate(palette, mobile))
     mask, position = name_mask(mobile)
-    band = Image.new("L", (mask.width, 1))
+    pad = math.ceil(mask.height * 0.13)
+    band = Image.new("L", (mask.width + 2 * pad, 1))
     center = (phase * 1.38 - 0.20) * mask.width
     spread = mask.width * 0.115
     band.putdata(
         [
-            round(185 * max(0, 1 - abs(x - center) / spread) ** 2)
-            for x in range(mask.width)
+            round(212 * max(0, 1 - abs(x - pad - center) / spread) ** 1.4)
+            for x in range(band.width)
         ]
     )
-    light = ImageChops.multiply(mask, band.resize(mask.size, Image.Resampling.NEAREST))
+    foil = band.resize((band.width, mask.height), Image.Resampling.NEAREST).transform(
+        mask.size,
+        Image.Transform.AFFINE,
+        (1, -0.23, pad + 0.115 * mask.height, 0, 1, 0),
+    )
+    light = ImageChops.multiply(mask, foil)
     x, y = position
     canvas.image.paste(palette.copper, (x, y, x + mask.width, y + mask.height), light)
-    draw_plotter_frame(Plotter(canvas, origin, zoom), phase)
+    writing = draw_plotter_frame(Plotter(canvas, origin, zoom), phase)
+    label_x, label_y = (353, 202) if mobile else (937, 70)
+    canvas.line([(label_x, label_y + 7), (label_x + 15, label_y + 7)], palette.rim, 1)
+    canvas.circle(
+        label_x + 19,
+        label_y + 7,
+        3,
+        palette.copper if writing else palette.bg,
+        palette.copper,
+        1.1,
+    )
+    canvas.text(
+        label_x + 32,
+        label_y,
+        "Nib down" if writing else "Nib lifted",
+        16,
+        palette.soft,
+        "mono",
+    )
     command = "python3 -m ghostdock demo"
     # Hold at both ends, erasing and retyping once per plotter pass.
     if 0.30 < phase < 0.48:
@@ -407,6 +478,14 @@ def main():
         )
     for kind in ("backup", "python", "android"):
         assets[f"glyph-{kind}"] = (lambda phase, k=kind: glyph_frame(phase, k), 40, 100)
+    for kind in STUDIES:
+        for mobile in (False, True):
+            name = f"study-{kind}" + ("-mobile" if mobile else "")
+            assets[name] = (
+                lambda phase, k=kind, m=mobile: study_frame(phase, k, m),
+                64,
+                80,
+            )
     if options.only and options.only not in assets:
         parser.error(f"Unknown asset. Choose one of {', '.join(assets)}")
     for name, (render, frames, duration) in assets.items():

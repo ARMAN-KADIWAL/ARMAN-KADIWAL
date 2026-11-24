@@ -1,12 +1,12 @@
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 700px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-night-mobile-still.png" />
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-day-mobile-still.png" />
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-night-still.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-day-still.png" />
-  <source media="(max-width: 700px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-night-mobile.gif" />
-  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-day-mobile.gif" />
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-night.gif" />
-  <img src="./assets/workbench/cover-day.gif" width="100%" alt="Arman Kadiwal. Python, systems and Android. A pen plotter draws my initials." />
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 700px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-night-mobile-still.png?v=2" />
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-day-mobile-still.png?v=2" />
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-night-still.png?v=2" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-day-still.png?v=2" />
+  <source media="(max-width: 700px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-night-mobile.gif?v=2" />
+  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-day-mobile.gif?v=2" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-night.gif?v=2" />
+  <img src="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-day.gif?v=2" width="100%" alt="Arman Kadiwal. Python, systems and Android. A brass-nib pen plotter draws my AK initials and a curved signature underline." />
 </picture>
 
 I’m Arman. I write Python tools to find out whether a service recovered and whether a backup restores the right data. My Android projects are where I experiment with touch and motion.
@@ -50,19 +50,46 @@ The demo records a successful application check through simulated AWS Systems Ma
 
 ## More projects
 
-### <picture><source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/glyph-backup-still.png" /><img src="./assets/workbench/glyph-backup.gif" align="absmiddle" width="28" height="28" alt="" /></picture> Backup Recovery Tester
+### Backup Recovery Tester
 
-One restore test changes a single order amount and keeps the row count the same. After restoring the SQLite backup, the verifier compares table contents with the saved hashes and catches the change.
+<a href="https://github.com/ARMAN-KADIWAL/backup-automation/blob/bfd56bca604638ce340b5f53af5694843e454fed/tests/test_core.py#L40">
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/study-backup-mobile-still.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/study-backup-still.png" />
+  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/study-backup-mobile.gif" />
+  <img src="./assets/workbench/study-backup.gif" width="100%" alt="Open the restore test. The manifest and restored orders table both have 40 rows, but their content hashes differ after one amount changes by 0.50." />
+</picture>
+</a>
+
+My restore test adds 0.50 to one order in a 40-row SQLite backup. The row count stays the same. Comparing the restored table with its saved content hash catches the edit.
 
 [Run the restore demo](https://github.com/ARMAN-KADIWAL/backup-automation#single-command-demo) · [Read the test](https://github.com/ARMAN-KADIWAL/backup-automation/blob/bfd56bca604638ce340b5f53af5694843e454fed/tests/test_core.py#L40)
 
-### <picture><source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/glyph-python-still.png" /><img src="./assets/workbench/glyph-python.gif" align="absmiddle" width="28" height="28" alt="" /></picture> Python Deep Dive
+### Python Deep Dive
 
-Lab 82 runs a TCP server that handles multiple clients at once. The validation run for Labs 75–82 passed **55 automated tests and 35 example runs**, including local socket exchanges.
+<a href="https://github.com/ARMAN-KADIWAL/python-deep-dive/tree/main/Lab%2082">
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/study-python-mobile-still.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/study-python-still.png" />
+  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/study-python-mobile.gif" />
+  <img src="./assets/workbench/study-python.gif" width="100%" alt="Open Lab 82. Two TCP clients send time and stats to one server on port 8888 and receive separate replies." />
+</picture>
+</a>
+
+In Lab 82, one client can ask for the time while another checks its own message count on the same TCP server. The validation run for Labs 75–82 passed **55 automated tests and 35 example runs**, including local socket exchanges.
 
 [Open the multi-client lab](https://github.com/ARMAN-KADIWAL/python-deep-dive/tree/main/Lab%2082) · [Check the results](https://github.com/ARMAN-KADIWAL/python-deep-dive/blob/68dcb9dc06aaf7d51a5d87eaf9bb29434f8692a8/progress/labs75-82-verification.json) · [See the Python 3.12 and 3.13 runs](https://github.com/ARMAN-KADIWAL/python-deep-dive/actions/runs/45047194870)
 
-### <picture><source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/glyph-android-still.png" /><img src="./assets/workbench/glyph-android.gif" align="absmiddle" width="28" height="28" alt="" /></picture> Android experiments
+### Android experiments
+
+<a href="https://github.com/ARMAN-KADIWAL/extra_work_123hy/blob/main/android-bounce-lab/app/src/main/java/com/example/bouncelab/MainActivity.kt">
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/study-android-mobile-still.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/study-android-still.png" />
+  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/study-android-mobile.gif" />
+  <img src="./assets/workbench/study-android.gif" width="100%" alt="Open the Bounce Lab drawing code. A touch creates a bubble that falls, flattens at the floor and rebounds in smaller arcs." />
+</picture>
+</a>
 
 In Bounce Lab, tapping or dragging creates bubbles that fall, squash and rebound on an Android canvas. ChatWave explores a different interaction problem with local conversations, search and reactions.
 
