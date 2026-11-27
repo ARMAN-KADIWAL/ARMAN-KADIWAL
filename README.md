@@ -9,9 +9,9 @@
   <img src="https://raw.githubusercontent.com/ARMAN-KADIWAL/ARMAN-KADIWAL/main/assets/workbench/cover-day.gif?v=2" width="100%" alt="Arman Kadiwal. Python, systems and Android. A brass-nib pen plotter draws my AK initials and a curved signature underline." />
 </picture>
 
-I’m Arman. I write Python tools to find out whether a service recovered and whether a backup restores the right data. My Android projects are where I experiment with touch and motion.
+I’m Arman. I write Python tools to find out whether a service recovered and whether a backup restores the right data. My Android projects are where I experiment with touch and motion. My current study focus also includes information security and risk-based engineering.
 
-[GhostDock replay](#ghostdock) · [More projects](#more-projects) · [Contribution trail](#contribution-trail)
+[GhostDock replay](#ghostdock) · [Python portfolio](#python-deep-dive) · [Security study](#cissp-study-portfolio) · [More projects](#more-projects) · [Contribution trail](#contribution-trail)
 
 ## GhostDock
 
@@ -76,9 +76,17 @@ My restore test adds 0.50 to one order in a 40-row SQLite backup. The row count 
 </picture>
 </a>
 
-In Lab 82, one client can ask for the time while another checks its own message count on the same TCP server. The validation run for Labs 75–82 passed **55 automated tests and 35 example runs**, including local socket exchanges.
+Python Deep Dive now contains **94 organized lab folders**, from Python fundamentals through automation, data analysis, Flask, networking, testing and advanced typing. In Lab 82, independent TCP clients exchange messages with the same server. The earlier Labs 75–82 validation recorded 55 automated tests and 35 example runs. The final Task Manager capstone recorded **11 passing tests and 97.58% line coverage** in its linked CI run.
 
-[Open the multi-client lab](https://github.com/ARMAN-KADIWAL/python-deep-dive/tree/main/Lab%2082) · [Check the results](https://github.com/ARMAN-KADIWAL/python-deep-dive/blob/68dcb9dc06aaf7d51a5d87eaf9bb29434f8692a8/progress/labs75-82-verification.json) · [See the Python 3.12 and 3.13 runs](https://github.com/ARMAN-KADIWAL/python-deep-dive/actions/runs/45047194870)
+[Explore all 94 labs](https://github.com/ARMAN-KADIWAL/python-deep-dive#complete-lab-index) · [Open the multi-client lab](https://github.com/ARMAN-KADIWAL/python-deep-dive/tree/main/Lab%2082) · [Verification records](https://github.com/ARMAN-KADIWAL/python-deep-dive/blob/main/docs/VERIFICATION.md) · [Capstone](https://github.com/ARMAN-KADIWAL/python-deep-dive/tree/main/Lab%20100) · [Recorded CI results](https://github.com/ARMAN-KADIWAL/python-deep-dive/actions/runs/46041721824)
+
+### CISSP study portfolio
+
+[![Security study](https://img.shields.io/badge/Security_Study-8_Domains-0D9488?style=flat-square)](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-) [![Learning status](https://img.shields.io/badge/Status-In_Progress-D97706?style=flat-square)](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-/blob/main/docs/PROGRESS.md)
+
+My next learning focus is information security: understanding risk, secure architecture, identity, network protection, operations and secure software development. I have organized an independent CISSP study repository around the eight official domains, with original study prompts, practical exercise plans and a progress tracker. This is preparation and learning, not a claim of CISSP certification.
+
+[Explore the eight domains](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-#eight-security-domains) · [Study progress](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-/blob/main/docs/PROGRESS.md) · [Practice templates](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-/tree/main/templates)
 
 ### Android experiments
 
