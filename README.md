@@ -11,7 +11,22 @@
 
 I’m Arman. I write Python tools to find out whether a service recovered and whether a backup restores the right data. My Android projects are where I experiment with touch and motion. My current study focus also includes information security and risk-based engineering.
 
-[GhostDock replay](#ghostdock) · [Python portfolio](#python-deep-dive) · [Security study](#cissp-study-portfolio) · [More projects](#more-projects) · [Contribution trail](#contribution-trail)
+[Current learning](#current-learning-focus) · [Security study](#cissp-study-portfolio) · [Python portfolio](#python-deep-dive) · [GhostDock replay](#ghostdock) · [More projects](#more-projects) · [Contribution trail](#contribution-trail)
+
+## Current learning focus
+
+| Portfolio | Progress |
+|---|---|
+| [Python Deep Dive](https://github.com/ARMAN-KADIWAL/python-deep-dive) | 94 organized labs · [Capstone](https://github.com/ARMAN-KADIWAL/python-deep-dive/tree/main/Lab%20100) · [Verified results](https://github.com/ARMAN-KADIWAL/python-deep-dive/blob/main/docs/VERIFICATION.md) |
+| [CISSP study portfolio](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-) | 8-domain study roadmap · [Progress tracker](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-/blob/main/docs/PROGRESS.md) · Learning in progress |
+
+### CISSP study portfolio
+
+[![Security study](https://img.shields.io/badge/Security_Study-8_Domains-0D9488?style=flat-square)](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-) [![Learning status](https://img.shields.io/badge/Status-In_Progress-D97706?style=flat-square)](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-/blob/main/docs/PROGRESS.md)
+
+My next learning focus is information security: understanding risk, secure architecture, identity, network protection, operations and secure software development. I have organized an independent CISSP study repository around the eight official domains, with original study prompts, practical exercise plans and a progress tracker. This is preparation and learning, not a claim of CISSP certification.
+
+[Explore the eight domains](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-#eight-security-domains) · [Study progress](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-/blob/main/docs/PROGRESS.md) · [Practice templates](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-/tree/main/templates)
 
 ## GhostDock
 
@@ -79,14 +94,6 @@ My restore test adds 0.50 to one order in a 40-row SQLite backup. The row count 
 Python Deep Dive now contains **94 organized lab folders**, from Python fundamentals through automation, data analysis, Flask, networking, testing and advanced typing. In Lab 82, independent TCP clients exchange messages with the same server. The earlier Labs 75–82 validation recorded 55 automated tests and 35 example runs. The final Task Manager capstone recorded **11 passing tests and 97.58% line coverage** in its linked CI run.
 
 [Explore all 94 labs](https://github.com/ARMAN-KADIWAL/python-deep-dive#complete-lab-index) · [Open the multi-client lab](https://github.com/ARMAN-KADIWAL/python-deep-dive/tree/main/Lab%2082) · [Verification records](https://github.com/ARMAN-KADIWAL/python-deep-dive/blob/main/docs/VERIFICATION.md) · [Capstone](https://github.com/ARMAN-KADIWAL/python-deep-dive/tree/main/Lab%20100) · [Recorded CI results](https://github.com/ARMAN-KADIWAL/python-deep-dive/actions/runs/46041721824)
-
-### CISSP study portfolio
-
-[![Security study](https://img.shields.io/badge/Security_Study-8_Domains-0D9488?style=flat-square)](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-) [![Learning status](https://img.shields.io/badge/Status-In_Progress-D97706?style=flat-square)](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-/blob/main/docs/PROGRESS.md)
-
-My next learning focus is information security: understanding risk, secure architecture, identity, network protection, operations and secure software development. I have organized an independent CISSP study repository around the eight official domains, with original study prompts, practical exercise plans and a progress tracker. This is preparation and learning, not a claim of CISSP certification.
-
-[Explore the eight domains](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-#eight-security-domains) · [Study progress](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-/blob/main/docs/PROGRESS.md) · [Practice templates](https://github.com/ARMAN-KADIWAL/Certified-Information-Systems-Security-Professional-CISSP-/tree/main/templates)
 
 ### Android experiments
 
